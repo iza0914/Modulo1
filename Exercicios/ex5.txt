@@ -1,0 +1,11 @@
+int idadeParticipante = 17;
+bool temAutorizacao = true;
+bool jaJogouAntes = false;
+bool maiorOuIgualA16 = idadeParticipante >= 16;
+bool exatamente17 = idadeParticipante == 17;
+bool podeJogar1 = maiorOuIgualA16 && temAutorizacao;
+bool podeJogar2 = maiorOuIgualA16 || jaJogouAntes;
+bool naoPodeJogar = !temAutorizacao;
+
+Console.WriteLine();
+Console.ReadLine();
