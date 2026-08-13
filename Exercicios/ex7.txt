@@ -1,0 +1,38 @@
+switch (DiaDaSemana)
+
+{
+
+    case 1:
+        Console.WriteLine("É Domingo! Dia de descanso");
+        break;
+
+    case 2:
+        Console.WriteLine(" É Segunda-feira");
+        break;
+
+    case 3:
+        Console.WriteLine(" É Terça-feira");
+        break;
+
+    case 4:
+        Console.WriteLine(" É Quarta-feira");
+        break;
+
+    case 5:
+        Console.WriteLine(" É Quinta-feira");
+        break;
+
+    case 6:
+        Console.WriteLine(" É Sexta-feira");
+        break;
+
+    case 7:
+        Console.WriteLine("Sábadou");
+        break;
+
+    default:
+
+        Console.WriteLine("Dia da semana inválido");
+        break;
+
+}

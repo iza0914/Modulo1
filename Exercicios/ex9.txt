@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class EscolhaTransporte {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite o tipo de trajeto (1 para Curto, 2 para Médio, 3 para Longo): ");
+        int tipoTrajeto = scanner.nextInt();
+        
+        switch (tipoTrajeto) {
+            case 1:
+                System.out.println("Tipo de Trajeto escolhido: 1 (Curto)");
+                System.out.println("Sugestão: Vá a pé ou de bicicleta.");
+                break;
+                
+            case 2:
+                System.out.println("Tipo de Trajeto escolhido: 2 (Médio)");
+                System.out.println("Sugestão: Use transporte público ou carro.");
+                break;
+                
+            case 3:
+                System.out.println("Tipo de Trajeto escolhido: 3 (Longo)");
+                System.out.println("Sugestão: Considere avião ou ônibus de viagem.");
+                break;
+                
+            default:
+                System.out.println("Tipo de trajeto inválido. Por favor, escolha 1, 2 ou 3.");
+                break;
+        }
+        
+        scanner.close();
+    }
+}
