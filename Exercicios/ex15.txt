@@ -1,0 +1,40 @@
+using System;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        double precoMaximo = 50.0;
+
+        double produto1 = 45.0;
+        Console.WriteLine($"Verificando produto 1 (R$ {produto1:F2} com máximo R$ {precoMaximo:F2}):");
+        if (VerificarPrecoPromocional(produto1, precoMaximo))
+        {
+            Console.WriteLine("Está em promoção!");
+        }
+        else
+        {
+            Console.WriteLine("Não está em promoção.");
+        }
+
+        Console.WriteLine();
+
+        double produto2 = 55.0;
+        Console.WriteLine($"Verificando produto 2 (R$ {produto2:F2} com máximo R$ {precoMaximo:F2}):");
+        if (VerificarPrecoPromocional(produto2, precoMaximo))
+        {
+            Console.WriteLine("Está em promoção!");
+        }
+        else
+        {
+            Console.WriteLine("Não está em promoção.");
+        }
+
+        Console.ReadKey();
+    }
+
+    public static bool VerificarPrecoPromocional(double preco, double precoMaximo)
+    {
+        return preco <= precoMaximo;
+    }
+}

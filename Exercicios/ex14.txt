@@ -1,0 +1,24 @@
+using System;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        double nota1 = 7.5;
+        double nota2 = 8.0;
+        double nota3 = 6.0;
+
+        double media = CalcularMedia(nota1, nota2, nota3);
+
+        Console.WriteLine($"A média das notas é: {media:F2}");
+
+        Console.ReadKey();
+    }
+
+    public static double CalcularMedia(double n1, double n2, double n3)
+    {
+        double media = (n1 + n2 + n3) / 3.0;
+        return media;
+    }
+}
+

@@ -1,0 +1,10 @@
+
+SaudarMundo();
+
+Console.ReadKey();
+
+
+static void SaudarMundo()
+{
+    Console.WriteLine("Olá, mundo da programação!");
+}
