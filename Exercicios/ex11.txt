@@ -1,0 +1,17 @@
+using System;
+
+double totalCompra = 0.0;
+char continuarComprando = 's';
+
+Console.WriteLine("--- Carrinho de Compras ---");
+
+while (continuarComprando == 's')
+{
+    Console.Write("Digite o preço do item: ");
+    totalCompra += Convert.ToDouble(Console.ReadLine());
+
+    Console.Write("Deseja adicionar mais itens? (s/n): ");
+    continuarComprando = Convert.ToChar(Console.ReadLine().ToLower());
+}
+
+Console.WriteLine("Total da sua compra: R$ " + totalCompra.ToString("F2"));
